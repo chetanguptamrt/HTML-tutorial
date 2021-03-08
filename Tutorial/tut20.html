@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            tutorial 20
+        </title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Enter your personal Detail</legend>
+                <label>Name</label> <input type="text" name="fName" /> <br/><br/>
+                
+                <label>Password</label> <input type="password" name="fPass" /> <br/><br/>
+                
+                <label>Gender</label> <input type="radio" name="fGender" id="male" /> <label for="male">Male</label> <input type="radio" name="fGender" id="female" /> <label for="female">Female</label> <br/><br/>
+                
+                <label>Hobies</label> <input type="checkbox" name="hobies" id="music" /> <label for="music">Music</label> <input type="checkbox" name="hobies" id="football" /> <label for="football">Football</label> <br/><br/>
+                
+                <label>Country</label> 
+                <!--multiple with size is called list-->
+                <select name="country" size=1 >
+                    <option selected value="in">India</option>
+                    <option value="pak">Pakistan</option>
+                    <option value="ne">Nepal</option>
+                    <option value="bu">Butan</option>
+                    <option value="cn">China</option>
+                </select> <br/><br/>
+                
+                <label>Cars</label>
+                <select>
+                    <optgroup label="Toyota">
+                        <option>Innova</option>
+                        <option>Etios</option>
+                        <option>Fortuner</option>
+                    </optgroup>
+                    <optgroup label="Renault">
+                        <option>Kwid</option>
+                        <option>Duster</option>
+                        <option>Captur</option>
+                    </optgroup>
+                </select> <br/><br/>
+                
+                <label>Cars</label> <input list="cars">
+                                    <datalist id="cars">
+                                        <option value="Innova">
+                                        <option value="Etios">
+                                        <option value="Fortuner">
+                                        <option value="Kwid">
+                                        <option value="Duster">
+                                        <option value="Captur">
+
+                                    </datalist> <br/><br/>
+
+                <label>Message</label> <textarea rows=6 cols="60"></textarea> <br/><br/>
+                
+                <label>Upload pic</label> <input type="file" name="" accept="image/.png"/> <br/><br/>
+
+                <input type="submit" value="Save"/>
+                <input type="reset" value="Reset"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
